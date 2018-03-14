@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_mosque"
+            android:icon="@mipmap/ic_add_black_24dp"
+            android:title="Add a Mosque" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@mipmap/ic_feedback_black_24dp"
+            android:title="Send Feedback" />
+    </group>
+
+</menu>

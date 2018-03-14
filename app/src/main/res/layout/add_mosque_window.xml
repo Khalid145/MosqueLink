@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/closeBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/black"
+                    android:text="x"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:text="Add a mosque"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:layout_weight="1.00" />
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_green_light"
+                        android:text="SEND"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.93"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-4464620464028773/6576558129"></com.google.android.gms.ads.AdView>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_mosque_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Mosque Name (REQUIRED)"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical" />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_doorNumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Door Number"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_streetName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Street Name (REQUIRED)"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_postcode"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Postcode (REQUIRED)"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_city"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="City (REQUIRED)"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_capacity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Capacity"
+                                        android:inputType="number"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_gender"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Gender"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_following"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Following"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_management"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Management"
+                                        android:inputType="textEmailAddress"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_telephone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Telephone"
+                                        android:inputType="text|phone"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.33">
+
+                                    <EditText
+                                        android:id="@+id/et_website"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Website"
+                                        android:inputType="text"
+                                        android:lines="8"
+                                        android:maxLines="10"
+                                        android:minLines="6"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="15dp"
+                                        android:scrollbars="vertical"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

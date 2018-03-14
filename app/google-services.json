@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "883503030254",
+    "firebase_url": "https://mosquelink-1506421128580.firebaseio.com",
+    "project_id": "mosquelink-1506421128580",
+    "storage_bucket": "mosquelink-1506421128580.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883503030254:android:4068dce9d869ef1d",
+        "android_client_info": {
+          "package_name": "com.khalid.mosquelink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883503030254-14je66g64t7brho75q2fjhfgvu2gesj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP2ncYBhdu8p5QKNwFA7N7ZlR2mxnJtxc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
